@@ -63,9 +63,9 @@ def all_supplies_in_holidays(holiday_hash)
       name_c = name.to_s
 
       if name_c.include?("_")
-        name_c.split("_")
-        ar = name_c.each {|i| i.capitalize!}
-        name_c = ar.join(" ")
+        ar = name_c.split("_")
+        ar_c = ar.each {|i| i.capitalize!}
+        name_c = ar_c.join(" ")
       else
         name_c = name.capitalize
       end
