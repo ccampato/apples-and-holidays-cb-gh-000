@@ -43,7 +43,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash[:season] = {holiday_name: supply_array}
   binding.pry
 
-  puts holiday_hash
+  holiday_hash.inspect
 end
 
 def all_winter_holiday_supplies(holiday_hash)
