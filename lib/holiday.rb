@@ -44,6 +44,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     holiday_hash[:season] = holiday_name
     n = holiday_name.each {|supply| supply << supply_array}
   end
+  n
 end
 
 def all_winter_holiday_supplies(holiday_hash)
