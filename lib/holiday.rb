@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
         ar_c = ar.each {|i| i.capitalize!}
         name_c = ar_c.join(" ")
       else
-        name_c = name.capitalize!
+        name_c = name.capitalize
       end
 
       supply_s = supply.join(", ")
